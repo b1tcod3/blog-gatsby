@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import dogIllustration from "../images/dog-illustration.svg";
+import chaos from "../images/caos.png";
 
 function AboutPage() {
   return (
@@ -15,20 +15,13 @@ function AboutPage() {
       <section className="flex flex-col items-center md:flex-row">
         <div className="md:w-2/3 md:mr-8">
           <blockquote className="pl-4 font-serif leading-loose text-justify border-l-4 border-gray-900">
-            The point is... to live one&apos;s life in the full complexity of
-            what one is, which is something much darker, more contradictory,
-            more of a maelstrom of impulses and passions, of cruelty, ecstacy,
-            and madness, than is apparent to the civilized being who glides on
-            the surface and fits smoothly into the world.
+           p>Hello, in me you can find a chaotira person, with creative flair and social sensitivity.</p>
+           <p>I think we are living in times of digital revolution but of great inequality in the distribution of knowledge</p>
           </blockquote>
-
-          <cite className="block mt-4 text-xs font-bold text-right uppercase">
-            – Thomas Nagel
-          </cite>
         </div>
 
         <figure className="w-2/3 md:w-1/3">
-          <img alt="A dog relaxing" src={dogIllustration} />
+          <img alt="A dog relaxing" src={chaos} />
         </figure>
       </section>
     </Layout>
