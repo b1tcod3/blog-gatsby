@@ -45,6 +45,12 @@ function Header() {
             isExpanded ? `block` : `hidden`
           } md:block md:flex md:items-center w-full md:w-auto`}
         >
+      <form action="/search" method="GET">
+        <input name="b"
+        className="w-full h-10 px-3 rounded focus:outline-none focus:shadow-outline text-sm px-8 shadow-lg" type="search" placeholder="Search Post..." />
+      </form>
+        
+        
           {[
             {
               route: `/t/internet`,
@@ -74,6 +80,7 @@ function Header() {
               {link.title}
             </Link>
           ))}
+
         </nav>
       </div>
     </header>
