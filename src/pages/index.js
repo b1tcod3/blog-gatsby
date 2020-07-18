@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Quote from "../components/elements/quote";
 
+
 import keyboard from "../images/keyboard.svg";
 
 function IndexPage() {
@@ -31,6 +32,7 @@ function IndexPage() {
             quote="I can't in good conscience allow the U.S. government to destroy privacy, internet freedom and basic liberties for people around the world with this massive surveillance machine they're secretly building."
           />
         </p>
+
       </section>
     </Layout>
   );

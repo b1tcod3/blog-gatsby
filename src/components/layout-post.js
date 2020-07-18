@@ -3,12 +3,13 @@ import React from "react";
 
 import Header from "./header";
 import Footer from "./footer";
+import MailchimpForm from "./MailchimpForm.jsx";
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-
+import Github from "./elements/github";
 
 function LayoutPost({children,fullWidth}) {
 
-  const { description } = useSiteMetadata(); 
+  const { description, githubUsername } = useSiteMetadata(); 
 
   return (
     <div className="flex flex-col min-h-screen font-sans text-gray-900" >
@@ -37,27 +38,12 @@ function LayoutPost({children,fullWidth}) {
                       <p className="pb-2">
                         {description}
                       </p>
-                      <a href="#" className="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-4">
-                          Get to know us
-                      </a>
+                      
+                      <p className="pb-2"><MailchimpForm /></p>
                   </div>
 
                   <div className="w-full bg-white shadow flex flex-col my-4 p-6">
-                      <p className="text-xl font-semibold pb-5">Instagram</p>
-                      <div className="grid grid-cols-3 gap-3">
-                          <img className="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=1"/>
-                          <img className="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=2"/>
-                          <img className="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=3"/>
-                          <img className="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=4"/>
-                          <img className="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=5"/>
-                          <img className="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=6"/>
-                          <img className="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=7"/>
-                          <img className="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=8"/>
-                          <img className="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=9"/>
-                      </div>
-                      <a href="#" className="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
-                          <i className="fab fa-instagram mr-2"></i> Follow @dgrzyb
-                      </a>
+                      <Github github={githubUsername}/>
                   </div>
 
               </aside>

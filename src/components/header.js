@@ -45,12 +45,15 @@ function Header() {
             isExpanded ? `block` : `hidden`
           } md:block md:flex md:items-center w-full md:w-auto`}
         >
-      <form action="/search" method="GET">
-        <input name="b"
-        className="w-full h-10 px-3 rounded focus:outline-none focus:shadow-outline text-sm px-8 shadow-lg" type="search" placeholder="Search Post..." />
-      </form>
-        
-        
+        <Link
+              className="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6"
+              to={`/search`}
+              activeStyle={{fontWeight: 'bolder'}}
+            >
+              <svg className="fill-current pointer-events-none text-grey-darkest w-4 h-4 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+    <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"></path>
+    </svg>
+            </Link>
           {[
             {
               route: `/t/internet`,
@@ -80,7 +83,7 @@ function Header() {
               {link.title}
             </Link>
           ))}
-
+          
         </nav>
       </div>
     </header>

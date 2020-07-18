@@ -1,11 +1,11 @@
 ---
-title: "Second Gatsby Blog Post"
+title: "Third Gatsby Blog Post"
 date: "2020-01-19"
 categories: ['sport','science']
 type: "coding"
 featured: "../../images/posts/apis.jpg"
 description: "adfasdfsd"
-tags: ['t1','t2']
+tags: ['t1']
 ---
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!
 

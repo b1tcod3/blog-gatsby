@@ -3,12 +3,17 @@ const tailwindConfig = require("./tailwind.config.js");
 
 const fullConfig = resolveConfig(tailwindConfig);
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 module.exports = {
   siteMetadata: {
     title: `B1tCod3 V1`,
     description: `Try to be a CypherPunker Blog. Internet and coding content`,
     author: `@b1tcod3`,
     github: `https://github.com/b1tcod3`,
+    githubUsername: `b1tcod3`,
     siteUrl: `https://sancochodigital.site/b1tcod3`,
   },
   plugins: [
@@ -63,5 +68,12 @@ module.exports = {
         ],
       },
     },
+    {
+        resolve: 'gatsby-plugin-mailchimp',
+        options: {
+            endpoint: process.env.MAILCHIMP_ENDPOINT, 
+        },
+    },
+
   ],
 }
