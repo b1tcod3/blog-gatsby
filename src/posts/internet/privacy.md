@@ -1,6 +1,6 @@
 ---
 title: "Gatsby Blog Post"
-date: "2020-01-19"
+date: "2020-08-07"
 categories: ['sport','science']
 type: "internet"
 featured: "../../images/tutorial.jpg"

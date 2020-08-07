@@ -6,7 +6,11 @@ import { FaCalendar, FaClock } from 'react-icons/fa';
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
-const Article = ({post, body,footer }) => (
+
+function Article ({post, body,footer }) {
+
+  return (
+
   <article className="flex flex-col shadow my-4" >
 				<a href="#" className="hover:opacity-75">
 					<Img
@@ -34,11 +38,12 @@ const Article = ({post, body,footer }) => (
 					<div className="markdown"
 						dangerouslySetInnerHTML={{ __html: body.html?body.html:body }}>
 					</div>
+					
 					{footer}
 				</div>
 				</article>
 )
-
+}
 export default Article
 
 Article.propTypes = {

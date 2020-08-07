@@ -3,13 +3,13 @@ import React from "react";
 
 function Header () {
   
-  const { github } = useSiteMetadata();
+  const { author } = useSiteMetadata();
 
   return(
     <footer className="bg-blue-700">
         <nav className="flex justify-between max-w-4xl p-4 mx-auto text-sm md:p-8">
           <p className="text-white">
-            Template by{` `}
+            Create for {author}. Template by{` `}
             <a
               className="font-bold no-underline"
               href="https://bryant.io"
@@ -21,16 +21,6 @@ function Header () {
           </p>
 
           <p>
-            <a
-              className="font-bold text-white no-underline"
-              href={github}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-          </p>
-          <p>
             Icons made by{` `}
             <a
               className="font-bold text-white no-underline"
@@ -38,17 +28,17 @@ function Header () {
               target="_blank"
               rel="noopener noreferrer"
             > 
-               Those Icons 
+               Flaticon
             </a>
-            {` `}from  {` `}   
+            {` `} and {` `}
             <a
-            className="font-bold text-white no-underline"
-             href="https://www.flaticon.com"
-             title="Flaticon"
-             target="_blank"
-             rel="noopener noreferrer"
-              > 
-               www.flaticon.com</a>
+              className="font-bold text-white no-underline"
+              href="https://icons8.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            > 
+               Icons8
+            </a>
           </p>
         </nav>
       </footer>

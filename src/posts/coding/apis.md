@@ -14,6 +14,20 @@ Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!
 alias temporibus dictorem ipsum dolor sit amet consectetur adipisicing elit.
 ![gatsby tutorial](../../images/gatsby-tutorial.png)
 
+```javascript
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-prismjs`,
+      ]
+    }
+  }
+]
+```
+
 ## Excepturi maxime
 
 omnis earum nobis architecto, quia officiis aperiam voluptate quaerat.

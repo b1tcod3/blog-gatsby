@@ -5,10 +5,14 @@ import Header from "./header";
 import Footer from "./footer";
 import MailchimpForm from "./MailchimpForm.jsx";
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import Github from "./elements/github";
+import Github from "./elements/github"
+import images from "../data/image-type.json"
+
+
 
 function LayoutPage({children,fullWidth,name , descriptionPage}) {
 
+  const {githubUsername } = useSiteMetadata();
   return (
     <div className="flex flex-col min-h-screen font-sans text-gray-900" >
       <Header />
@@ -34,24 +38,15 @@ function LayoutPage({children,fullWidth,name , descriptionPage}) {
 
               {//  Sidebar Section
               }
-              <aside className="w-full md:w-1/3 flex flex-col items-center px-3">
 
-                  <div className="w-full bg-white shadow flex flex-col my-4 p-6">
-                      <p className="text-xl font-semibold pb-5">Why {name}?</p>
-                      <p className="pb-2">
-                        {descriptionPage}
-                      </p>
-                      <a href="#" className="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-4">
-                          Get to know us
-                      </a>
-                  </div>
 
                   <aside className="w-full md:w-1/3 flex flex-col items-center px-3">
 
                   <div className="w-full bg-white shadow flex flex-col my-4 p-6">
+                      <img className="mx-auto" alt="image type" src={`/${images[name]}`} width="80px"/>
                       <p className="text-xl font-semibold pb-5">You are here:</p>
                       <p className="pb-2">
-                        {description}
+                        {descriptionPage}
                       </p>
                       
                       <p className="pb-2"><MailchimpForm /></p>
@@ -60,8 +55,6 @@ function LayoutPage({children,fullWidth,name , descriptionPage}) {
                   <div className="w-full bg-white shadow flex flex-col my-4 p-6">
                       <Github github={githubUsername}/>
                   </div>
-
-              </aside>
 
               </aside>
 

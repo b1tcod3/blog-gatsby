@@ -11,6 +11,8 @@ export const useSiteMetadata = () => {
             description
             github
             githubUsername
+            twitter
+            siteUrl
           }
         }
       }
