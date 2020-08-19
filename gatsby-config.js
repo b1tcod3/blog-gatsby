@@ -48,6 +48,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -155,7 +156,10 @@ module.exports = {
             escapeEntities: {},
           },
         },
-        {
+      ],
+    },
+  },
+  {
       resolve: 'gatsby-plugin-firebase',
       options: {
         credentials: {
@@ -169,9 +173,25 @@ module.exports = {
         },
       },
     },
-      ],
+
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `B1tCod3`,
+        short_name: `B1tCod3`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+      },
     },
-  },
+
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/about-us/`, `/projects/*`],
+      },
+    },
 
   ],
 
