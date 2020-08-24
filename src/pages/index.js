@@ -5,25 +5,25 @@ import SEO from "../components/seo";
 import Quote from "../components/elements/quote";
 
 
-import keyboard from "../images/keyboard.svg";
+import logo from "../images/logo.svg";
 
 function IndexPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`chypherpunk`, `privacity`, `freedom`, `coding`]}
-        title="Home"
+        keywords={[`internet`, `coding`, `libertad`, `cypherpunk`,`sancocho`,`digital`]}
+        title="Bienvenido"
       />
 
       <section className="text-center">
         <img
           alt="Keyboard"
           className="block w-1/3 mx-auto mb-8"
-          src={keyboard}
+          src={logo}
         />
 
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Hi! Welcome to my Site about Internet and Coding. For a free internet
+        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-gray-400">
+          Saludos! Bienvenido a mi sitio sobre coding e internet. Algo de conciencia social y activismo virtual
         </h2>
 
         <p className="leading-loose">

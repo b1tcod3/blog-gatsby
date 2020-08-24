@@ -26,7 +26,7 @@ function LayoutPage({children,fullWidth,name , descriptionPage}) {
 
                   <h1 
                   className="text-3xl font-sans font-thin">
-                  Post about {name}
+                  Posts Sobre {name}
                   </h1>
                   
                   {children}
@@ -44,7 +44,7 @@ function LayoutPage({children,fullWidth,name , descriptionPage}) {
 
                   <div className="w-full bg-white shadow flex flex-col my-4 p-6">
                       <img className="mx-auto" alt="image type" src={`/${images[name]}`} width="80px"/>
-                      <p className="text-xl font-semibold pb-5">You are here:</p>
+                      <p className="text-xl font-semibold pb-5">¿Qué es esto?</p>
                       <p className="pb-2">
                         {descriptionPage}
                       </p>

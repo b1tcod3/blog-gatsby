@@ -9,7 +9,7 @@ function Header () {
     <footer className="bg-blue-700">
         <nav className="flex justify-between max-w-4xl p-4 mx-auto text-sm md:p-8">
           <p className="text-white">
-            Create for {author}. Template by{` `}
+            Creado por {author}. Template de{` `}
             <a
               className="font-bold no-underline"
               href="https://bryant.io"
@@ -21,7 +21,7 @@ function Header () {
           </p>
 
           <p>
-            Icons made by{` `}
+            Iconos hechos por{` `}
             <a
               className="font-bold text-white no-underline"
               href="https://www.flaticon.com/authors/those-icons"

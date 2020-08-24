@@ -23,7 +23,7 @@ export const query = graphql`
         node {              
             frontmatter {                
               title                
-              date(formatString: "DD MMMM, YYYY")
+              date(formatString: "DD MMMM, YYYY", locale: "es")
               categories
               featured {          
                   childImageSharp {            
@@ -32,7 +32,8 @@ export const query = graphql`
                     }          
                   }        
                 } 
-              type  
+              type
+              tags  
             }              
             timeToRead              
             excerpt              
@@ -72,7 +73,7 @@ const Types = ({ pageContext, data }) => {
             {!isFirst && (
             <Link to={`/t/${kebabCase(type)}/${prevPage === 0 ? '' : prevPage}`} rel="prev"
             className="h-10 w-10 font-semibold text-gray-800 hover:text-gray-900 text-sm flex items-center justify-center ml-3"
-            >←Prev</Link>
+            >←Ant.</Link>
           )}
           
           {Array.from({ length: numPages }, (_, i) => (
@@ -89,7 +90,7 @@ const Types = ({ pageContext, data }) => {
             <Link to={`/t/${kebabCase(type)}/${nextPage === 0 ? '' : prevPage}`} rel="next"
             className="h-10 w-10 font-semibold text-gray-800 hover:text-gray-900 text-sm flex items-center justify-center ml-3"
             >
-              Next→
+              Próx→
             </Link>
           )}
         </div>

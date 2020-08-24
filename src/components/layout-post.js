@@ -34,7 +34,7 @@ function LayoutPost({children,fullWidth}) {
     
                   <div className="w-full bg-white shadow flex flex-col my-4 p-6">
                       <img className="mx-auto" alt="code" src={code} width="80px"/>
-                      <p className="text-xl font-semibold pb-5">You are here:</p>
+                      <p className="text-xl font-semibold pb-5">Aquí estas:</p>
                       <p className="pb-2">
                         {description}
                       </p>

@@ -53,7 +53,7 @@ const BlogPost = props => {
     <LayoutPost>
       <SEO
         keywords={props.data.markdownRemark.frontmatter.tags}
-        title="Coding Post"
+        title={title}
       />
       {}
       <Article 

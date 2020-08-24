@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from "prop-types";
 import './colors.css';
 import CategoriesList from "./categories-list";
+import Tags from "../tags";
 import { FaCalendar, FaClock } from 'react-icons/fa';
 import { Link } from "gatsby"
 import Img from "gatsby-image"
@@ -29,16 +30,16 @@ function Article ({post, body,footer }) {
 					<p href="#" className="text-sm pb-3">
 						<FaCalendar
 						style={{ margin: '0 5px' , display: 'inline'}}
-						/> Published on {post.frontmatter.date} {" "}
+						/> Publicado el {post.frontmatter.date} {" "}
 						<FaClock
 					style={{ margin: '0 5px' , display: 'inline'}}
 					/>	
-						{post.timeToRead} min read
+						{post.timeToRead} min de lectura
 					</p>
 					<div className="markdown"
 						dangerouslySetInnerHTML={{ __html: body.html?body.html:body }}>
 					</div>
-					
+					<Tags tags={post.frontmatter.tags} />
 					{footer}
 				</div>
 				</article>

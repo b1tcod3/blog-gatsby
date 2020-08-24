@@ -8,14 +8,13 @@ require("dotenv").config({
 })
 
 module.exports = {
-  pathPrefix: `/b1tcod3`,
   siteMetadata: {
-    title: `B1tCod3 V1`,
-    description: `Try to be a CypherPunker Blog. Internet and coding content`,
+    title: `Sancocho Digital`,
+    description: `Sitio dedicado al internet y al coding.`,
     author: `@b1tcod3`,
     github: `https://github.com/b1tcod3`,
     githubUsername: `b1tcod3`,
-    siteUrl: `https://sancochodigital.site/b1tcod3`,
+    siteUrl: `https://sancochodigital.site`,
     twitter: `@b1tcod3`,
     
   },

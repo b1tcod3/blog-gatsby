@@ -25,7 +25,7 @@ export default class FormContact extends React.Component {
             className="block mb-2 text-xs font-bold uppercase"
             htmlFor="first-name"
           >
-            Email
+            Correo
           </label>
 
           <input
@@ -39,7 +39,7 @@ export default class FormContact extends React.Component {
             className="block mb-2 text-xs font-bold uppercase"
             htmlFor="first-name"
           >
-            First Name
+            Nombre
           </label>
 
           <input
@@ -54,7 +54,7 @@ export default class FormContact extends React.Component {
             className="block mb-2 text-xs font-bold uppercase"
             htmlFor="last-name"
           >
-            Last Name
+           Apellido
           </label>
 
           <input
@@ -69,21 +69,21 @@ export default class FormContact extends React.Component {
             className="block mb-2 text-xs font-bold uppercase"
             htmlFor="message"
           >
-            Message
+            Mensaje
           </label>
 
           <textarea
             className="w-full mb-6 form-textarea"
             id="message"
             name="message"
-            placeholder="Say something..."
+            placeholder="Dí Algo..."
             rows="8"
           />
-          {status === "SUCCESS" ? <Alert title="Thanks" type="success" message="Message Send"/>: <button 
+          {status === "SUCCESS" ? <Alert title="Gracias" type="success" message="Mensaje Enviado"/>: <button 
           className="px-4 py-2 text-sm font-bold text-white bg-gray-700 border-b-4 border-gray-800 rounded hover:border-gray-700 hover:bg-gray-600"
-          type="submit"> Submit </button>}
+          type="submit"> Enviar </button>}
 
-          {status === "ERROR" && <Alert title="Error!" type="danger" message="Message Not Send"/>}
+          {status === "ERROR" && <Alert title="Error!" type="danger" message="Mensaje no Enviado"/>}
       </form>
     );
   }

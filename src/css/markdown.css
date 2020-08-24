@@ -8,6 +8,10 @@
   @apply text-gray-900 leading-normal break-words;
 }
 
+.markdown p{
+  @apply text-justify;
+}
+
 .markdown > * + * {
   @apply mt-0 mb-4;
 }

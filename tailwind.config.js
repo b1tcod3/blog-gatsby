@@ -4,7 +4,10 @@ module.exports = {
     './src/**/*.js',
   ],
   theme: {},
-  variants: {},
+  variants: {
+  	fontSize:['responsive','hover'],
+  	height:['responsive','hover']
+  },
   // https://github.com/tailwindcss/custom-forms
   plugins: [require("@tailwindcss/custom-forms")],
 };

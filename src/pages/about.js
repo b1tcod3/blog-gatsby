@@ -15,7 +15,7 @@ function AboutPage() {
       <section className="flex flex-col items-center md:flex-row">
         <div className="md:w-2/3 md:mr-8">
           <blockquote className="pl-4 font-serif leading-loose text-justify border-l-4 border-gray-900">
-           <p>Hello, in me you can find a chaotira person, with creative flair and social sensitivity.</p>
+           <p>Hola, Soy creyente del caos, pequeños cambios pueden afectar significativamente el mundo. Espero mi aporte contribuya a un cambio necesario en la era digital</p>
            <p>I think we are living in times of digital revolution but of great inequality in the distribution of knowledge</p>
           </blockquote>
         </div>

@@ -21,7 +21,7 @@ export const query = graphql`
         node {              
             frontmatter {                
               title                
-              date(formatString: "DD MMMM, YYYY")
+              date(formatString: "DD MMMM, YYYY", locale: "es")
               categories
               featured {          
                   childImageSharp {            
@@ -60,7 +60,7 @@ const Categories = ({ pageContext, data }) => {
       />
       <h1 
                   className="text-3xl font-sans font-thin">
-                  Posts category {category}
+                  Posts de categoria {category}
                   </h1>
 
       {edges.map(({ node }) => {
@@ -94,10 +94,6 @@ const Categories = ({ pageContext, data }) => {
             </Link>
           )}
         </div>
-
-       
-          
-
     </LayoutPost>
   )
 }
