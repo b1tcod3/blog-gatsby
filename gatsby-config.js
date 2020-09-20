@@ -31,7 +31,7 @@ module.exports = {
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.teal["400"],
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`,
+        icon: `src/images/logo.png`,
       },
     },
     {
@@ -172,23 +172,16 @@ module.exports = {
         },
       },
     },
-
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `B1tCod3`,
-        short_name: `B1tCod3`,
-        start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
-        display: `standalone`,
-      },
-    },
-
     {
       resolve: `gatsby-plugin-offline`,
       options: {
         precachePages: [`/about-us/`, `/projects/*`],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-1703323604885275`
       },
     },
 

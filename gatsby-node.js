@@ -107,4 +107,38 @@ const typeResult = await graphql(`
   })
 })
 
+const tagResult = await graphql(`
+  {
+    allMarkdownRemark(limit: 2000) {
+      group(field: frontmatter___tags) {
+      fieldValue
+      totalCount
+      }
+    }
+  }
+  `)
+
+  const tags = tagResult.data.allMarkdownRemark.group
+
+  tags.forEach(tag => {
+
+    const totalCount = tag.totalCount
+    const postsPerPage = 2
+    const numPages = Math.ceil(totalCount / postsPerPage)
+
+      Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/tag/${__.kebabCase(tag.fieldValue)}/` : `/tag/${__.kebabCase(tag.fieldValue)}/${i+1}`,
+        component: path.resolve(`./src/templates/blog-tags.js`),
+        context: {
+          tag: tag.fieldValue,
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
+        },
+      })  
+  })
+})
+
 }

@@ -6,6 +6,7 @@ import Tags from "../tags";
 import { FaCalendar, FaClock } from 'react-icons/fa';
 import { Link } from "gatsby"
 import Img from "gatsby-image"
+import RelatedPosts from "../related-posts"
 
 
 function Article ({post, body,footer }) {
@@ -40,6 +41,8 @@ function Article ({post, body,footer }) {
 						dangerouslySetInnerHTML={{ __html: body.html?body.html:body }}>
 					</div>
 					<Tags tags={post.frontmatter.tags} />
+					<h3 className="text-xl font-bold">Mira También:</h3>
+					<RelatedPosts category={post.frontmatter.type} postId={post.id}/>
 					{footer}
 				</div>
 				</article>

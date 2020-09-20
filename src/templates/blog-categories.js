@@ -23,6 +23,7 @@ export const query = graphql`
               title                
               date(formatString: "DD MMMM, YYYY", locale: "es")
               categories
+              tags
               featured {          
                   childImageSharp {            
                     fluid(maxWidth: 750) {              

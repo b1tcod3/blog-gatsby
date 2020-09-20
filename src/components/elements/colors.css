@@ -10,6 +10,26 @@ background-color: #ffed4a;
 background-color: #a0aec0;
 }
 
+.category-consejos{
+background-color: #a0aec0;
+}
+
 .category-cypherpunk{
 background-color: #e53e3e;
+}
+
+.category-coding{
+background-color: #e53e3e;
+}
+
+.tag-assange{
+background-color: #e53e3e;
+}
+
+.tag-bitcoin{
+background-color: #FA8072;
+}
+
+.tag-cypherpunk{
+background-color: #9df9ef;
 }

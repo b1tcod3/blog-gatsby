@@ -17,7 +17,7 @@ export const query = graphql`
 	      markdownRemark(fields: { slug: { eq: $slug } }) {
 	            frontmatter {        
 	            	title        
-	            	date(formatString: "DD MMMM, YYYY")
+	            	date(formatString: "DD MMMM, YYYY", locale: "es")
                     categories
                 featured {          
                   childImageSharp {            
@@ -27,6 +27,8 @@ export const query = graphql`
                   }
                 }
                 tags
+                description
+                type
 	            }      
 	            timeToRead      
 	            html
@@ -41,6 +43,8 @@ export const query = graphql`
 const BlogPost = props => { 
   
   const title = props.data.markdownRemark.frontmatter.title
+  const description = props.data.markdownRemark.frontmatter.description
+  const image = props.data.markdownRemark.frontmatter.featured.childImageSharp.fluid
   const slug = props.data.markdownRemark.fields.slug
   const disqusConfig = {
   shortname: process.env.GATSBY_DISQUS_NAME,
@@ -54,6 +58,8 @@ const BlogPost = props => {
       <SEO
         keywords={props.data.markdownRemark.frontmatter.tags}
         title={title}
+        description={description}
+        image = {image}
       />
       {}
       <Article 

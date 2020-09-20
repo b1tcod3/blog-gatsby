@@ -7,7 +7,7 @@ function Header () {
 
   return(
     <footer className="bg-blue-700">
-        <nav className="flex justify-between max-w-4xl p-4 mx-auto text-sm md:p-8">
+        <nav className="flex justify-between max-w-5xl p-4 mx-auto text-sm md:p-8">
           <p className="text-white">
             Creado por {author}. Template de{` `}
             <a
@@ -30,7 +30,7 @@ function Header () {
             > 
                Flaticon
             </a>
-            {` `} and {` `}
+            {` `}, {` `}
             <a
               className="font-bold text-white no-underline"
               href="https://icons8.com"
@@ -38,6 +38,25 @@ function Header () {
               rel="noopener noreferrer"
             > 
                Icons8
+            </a>{` `} and {` `}
+            <a
+              className="font-bold text-white no-underline"
+              href="https://iconscout.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            > 
+               Iconscout
+            </a>
+          </p>
+
+          <p>
+          <a
+              className="font-bold no-underline"
+              href={`/privacy-policy`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Privacidad
             </a>
           </p>
         </nav>

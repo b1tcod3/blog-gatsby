@@ -23,7 +23,7 @@ function IndexPage() {
         />
 
         <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-gray-400">
-          Saludos! Bienvenido a mi sitio sobre coding e internet. Algo de conciencia social y activismo virtual
+          Saludos! Bienvenido a mi sitio sobre coding, seguridad y internet. Algo de Hactivismo y cryptomonedas.
         </h2>
 
         <p className="leading-loose">

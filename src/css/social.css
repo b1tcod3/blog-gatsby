@@ -1,0 +1,19 @@
+.btn-social {
+  @apply font-bold py-2 px-4 rounded text-gray-200 mx-1 text-xs
+}
+
+.twitter{
+  background-color: #1da1f2;
+}
+.facebook{
+  background-color: #3b5998;
+}
+.whatsapp{
+  background-color: #128c7e;
+}
+.linkedin{
+  background-color: #0077b5;
+}
+.reddit{
+  background-color: #ff4500;
+}

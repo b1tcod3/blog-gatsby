@@ -59,6 +59,10 @@ function Header() {
               title: `Coding`,
             },
             {
+              route: `/t/cypherpunk`,
+              title: `Cypherpunk`,
+            },
+            {
               route: `/contact`,
               title: `Contacto`,
             },
